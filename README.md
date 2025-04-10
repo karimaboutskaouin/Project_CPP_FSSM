@@ -49,22 +49,47 @@ L’objectif est de créer une **application ludique** et **mono-utilisateur**, 
 ## 🧱 Structure du Projet
 
 ```bash
-📁 projet-course-velo/
-├── include/
-│   ├── menu.h
-│   ├── jeu.h
-│   ├── velo.h
-│   ├── collision.h
-│   └── constantes.h
-├── src/
-│   ├── main.cpp
-│   ├── menu.cpp
-│   ├── jeu.cpp
-│   ├── velo.cpp
-│   ├── collision.cpp
-│   └── ...
-├── assets/
-│   ├── images/
-│   └── sons/
-├── rapport.pdf
-└── README.md
+/JeuCourseVelo/
+│
+├── include/                      # Fichiers d'en-tête (.h)
+│   ├── Menu.h                    # Interface du menu principal
+│   ├── Jeu.h                     # Contrôle global du jeu
+│   ├── Velo.h                    # Déclaration de la classe Vélo
+│   ├── Carte.h                   # Gestion de la carte / niveau
+│   ├── Collision.h               # Fonctions de détection de collisions
+│   ├── Timer.h                   # Gestion du chronomètre
+│   ├── Constantes.h              # Constantes globales (dimensions, couleurs…)
+│   └── Utils.h                   # Fonctions utilitaires (random, affichage texte…)
+│
+├── src/                          # Implémentations (.cpp)
+│   ├── main.cpp                  # Point d'entrée du jeu
+│   ├── Menu.cpp                  # Implémentation du menu
+│   ├── Jeu.cpp                   # Boucle principale, logique globale
+│   ├── Velo.cpp                  # Mouvements, états du vélo
+│   ├── Carte.cpp                 # Chargement et affichage de la carte
+│   ├── Collision.cpp             # Gestion des collisions
+│   ├── Timer.cpp                 # Gestion du temps
+│   └── Utils.cpp                 # Fonctions diverses
+│
+├── assets/                       # Ressources utilisées
+│   ├── images/                   # Images, textures du jeu
+│   │   ├── velo.png
+│   │   ├── carte.png
+│   │   └── ...
+│   ├── sons/                     # Effets sonores, musique
+│   │   └── victoire.wav
+│   └── polices/                 # Polices d’écriture (.ttf)
+│       └── arcade.ttf
+│
+├── build/                        # Fichiers objets et exécutable
+│   └── JeuCourseVelo            # Fichier exécutable final
+│
+├── doc/                          # Rapport et documentation
+│   ├── Rapport_Jeu_Course_Velo.pdf
+│   └── diagrammes/              # Diagrammes UML, croquis, architecture
+│       ├── classes.png
+│       └── usecase.png
+│
+├── Makefile                      # Compilation automatisée
+├── .gitignore                    # Fichiers à ignorer par Git
+└── README.md                     # Présentation du projet
