@@ -93,3 +93,18 @@ L’objectif est de créer une **application ludique** et **mono-utilisateur**, 
 ├── Makefile                      # Compilation automatisée
 ├── .gitignore                    # Fichiers à ignorer par Git
 └── README.md                     # Présentation du projet
+
+```
+## 🧑‍🤝‍🧑 Répartition des Tâches
+
+| Tâche principale | Description | Assigné à |
+|------------------|-------------|------------|
+| 🔧 Setup initial | Création des dossiers, Makefile, `.gitignore` | **Hanane AIT BAH** |
+| 🎨 Menu principal | Création du menu avec SDL / console | **Karima TESKAOUINE** |
+| 🚴 Classe Vélo | Mouvement, vitesse, animation | **Hanane AIT BAH** |
+| 🗺️ Classe Carte | Création / lecture / affichage de la carte | **Karima TESKAOUINE** |
+| 💥 Collisions | Détection entre vélo et murs/obstacles | **Hanane AIT BAH** |
+| ⏱️ Chronomètre | Compte à rebours, timer | **Karima TESKAOUINE** |
+| 🧠 Classe Jeu | Boucle de jeu principale, états (gagner/perdre) | **Hanane AIT BAH** |
+| 🎼 Sons & Polices | Ajout de sons et personnalisation du texte | À discuter 😊 |
+
