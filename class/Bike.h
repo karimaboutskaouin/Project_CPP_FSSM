@@ -7,9 +7,11 @@ public:
     float x, y;
     float width, height;
     float speed;
-    Person person; // On ajoute une personne
+    Person person;
 
     Bike();
+    ~Bike();
+
     void Update();
     void Draw();
     Rectangle GetRect();

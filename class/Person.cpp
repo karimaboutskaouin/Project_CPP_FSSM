@@ -1,27 +1,24 @@
 #include "Person.h"
 
 Person::Person() {
-    width = 40;
-    height = 30;
+    texture = LoadTexture("/home/kari/Project_CPP_FSSM/class/file_000000005978620aaba046ed841eafe2.png");  // Assure-toi que le chemin est correct
+    width = (float)texture.width;
+    height = (float)texture.height;
+}
+
+Person::~Person() {
+    UnloadTexture(texture);
 }
 
 void Person::Draw(Vector2 seatPosition) {
-    // Dessine la tête
-    Vector2 headCenter = { seatPosition.x, seatPosition.y - height };
-    float headRadius = 10;
-    DrawCircleV(headCenter, headRadius, BEIGE);
+    float scale = 0.08f;
+    float verticalOffset = 20.0f; // Plus grande valeur pour rapprocher la personne du vélo
 
-    // Dessine le corps
-    Vector2 bodyStart = { seatPosition.x, seatPosition.y - headRadius };
-    Vector2 bodyEnd   = { seatPosition.x, seatPosition.y };
-    DrawLineEx(bodyStart, bodyEnd, 4.0f, BLACK);
+    Vector2 position = {
+        seatPosition.x - (texture.width * scale) / 2,
+        seatPosition.y - (texture.height * scale) + verticalOffset
+    };
 
-    // Bras
-    DrawLineEx({bodyStart.x, bodyStart.y + 5}, {bodyStart.x - 10, bodyStart.y + 15}, 2.0f, BLACK);
-    DrawLineEx({bodyStart.x, bodyStart.y + 5}, {bodyStart.x + 10, bodyStart.y + 15}, 2.0f, BLACK);
-
-    // Jambes
-    DrawLineEx(bodyEnd, {bodyEnd.x - 10, bodyEnd.y + 20}, 2.0f, BLACK);
-    DrawLineEx(bodyEnd, {bodyEnd.x + 10, bodyEnd.y + 20}, 2.0f, BLACK);
+    DrawTextureEx(texture, position, 0.0f, scale, WHITE);
 }
 

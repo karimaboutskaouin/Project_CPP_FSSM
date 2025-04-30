@@ -4,8 +4,11 @@
 class Person {
 public:
     float width, height;
+    Texture2D texture;
 
     Person();
+    ~Person();
+
     void Draw(Vector2 seatPosition);
 };
 
