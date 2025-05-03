@@ -223,3 +223,4 @@ Appuie sur Entree  → InitWindow()         → Update()      → Update()
                    → Boucle de jeu        → Draw()        → Draw()
                    → Quit                 → CloseWindow()
 ```
+![Diagramme de Conception et Modélisation](img_4_readme/conception_modelisation.png)
