@@ -19,8 +19,18 @@ Le développement de ce jeu a permis de mettre en pratique plusieurs compétence
 - Détection de collisions entre objets
 - Création et animation de sprites
 - Organisation modulaire du code C++ pour séparer la logique du jeu, le rendu, et la gestion des événements
-## 🧠 Pourquoi le choix de la bibliothèque raylib ?
+---
+---
+🎥 **Regarde la vidéo ici !** 🎬👇
 
+📹 **Clique sur la vidéo ci-dessous** pour découvrir quelque chose de génial ! 😲
+
+[![Regarder la vidéo](./images/miniature_video.jpg)](./videos/ma_video.mp4)
+
+🎮 **Ne rate pas ça !** 🎯
+----
+---
+## 🧠 Pourquoi le choix de la bibliothèque raylib ?
 Le choix de **raylib** pour le développement de ce jeu n'est pas anodin. Plusieurs raisons techniques et pédagogiques justifient son utilisation :
 
 ### ✅ Simplicité d'utilisation
