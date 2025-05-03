@@ -226,3 +226,4 @@ Appuie sur Entree  → InitWindow()         → Update()      → Update()
 <p>
   <img src="img_4_readme/conception_modelisation.png" alt="Diagramme UML" width="900"/>
 </p>
+
