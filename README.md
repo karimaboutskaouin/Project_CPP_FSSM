@@ -178,4 +178,21 @@ GitHub est une plateforme qui nous a permis de centraliser le code source du pro
 ### 1. Structure du Projet
 
 La structure du projet a été pensée pour être modulaire, claire et maintenable. Voici l'organisation générale du projet :
+```
+/src
+    /Game.cpp         # Logique principale du jeu, boucles, gestion des événements.
+    /Bike.cpp         # Gestion du vélo (mouvement, interactions, etc.)
+    /Person.cpp       # Gestion du personnage (réactions, contrôles, état)
+    /Obstacle.cpp     # Gestion des obstacles (apparition, collisions)
+    /Menu.cpp         # Gère le menu du jeu (démarrage, pause, options)
+    /main.cpp         # Point d'entrée, démarrage du jeu
+    /Game.h           # Déclarations des classes et fonctions pour Game
+    /Bike.h           # Déclarations des classes et fonctions pour Bike
+    /Person.h         # Déclarations des classes et fonctions pour Person
+    /Obstacle.h       # Déclarations des classes et fonctions pour Obstacle
+    /Menu.h           # Déclarations des classes et fonctions pour Menu
+/assets
+    - Images et autres ressources utilisées (sprites, icônes, etc.)
+```
+
 
