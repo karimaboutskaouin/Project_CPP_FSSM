@@ -139,4 +139,42 @@ Pour ouvrir un fichier source :
 ```bash
 gedit src/main.cpp &
 ```
+#  Collaboration sur le Projet de Jeu
+
+Ce document présente le rapport détaillé sur le développement du jeu réalisé en collaboration entre [ItsHaname](https://github.com/ItsHaname) et [karimaboutskaouin](https://github.com/karimaboutskaouin). Le projet est basé sur l'utilisation de **Raylib** et a été développé en **C++**. Ce rapport couvre les outils utilisés pour la gestion de version, ainsi que la conception et la modélisation du projet.
+
+---
+
+## Outils Utilisés
+
+### Git et GitHub
+
+#### 1. Git : Un Outil de Contrôle de Version
+
+Git est un système de contrôle de version décentralisé qui permet de gérer les différentes versions du code et de collaborer efficacement entre les développeurs. Grâce à Git, nous avons pu suivre l'historique de chaque modification et revenir à des versions antérieures lorsque cela était nécessaire.
+
+- **Suivi des Modifications** : Chaque modification dans le code est enregistrée par un "commit", ce qui nous permet de suivre l'évolution du projet de manière claire et ordonnée.
+  
+- **Branches** : Nous avons utilisé des branches pour travailler sur des fonctionnalités spécifiques sans perturber la branche principale du projet (`main`). Cela nous a permis de développer des fonctionnalités indépendamment et de les tester avant de les intégrer à la version stable.
+
+- **Fusion de Code (Merge)** : Après avoir terminé une fonctionnalité sur une branche distincte, nous avons fusionné les changements dans la branche principale en utilisant des "pull requests". Cela nous a permis de discuter et de valider les modifications avant de les intégrer.
+
+#### 2. GitHub : Collaboration à Distance
+
+GitHub est une plateforme qui nous a permis de centraliser le code source du projet et de collaborer à distance. Voici les fonctionnalités clés que nous avons utilisées :
+
+- **Fork et Pull Request** : Mon ami [karimaboutskaouin](https://github.com/karimaboutskaouin) a fait un fork de mon dépôt afin de travailler sur le projet en parallèle. Une fois ses modifications terminées, il a soumis une **pull request** pour que je puisse revoir et intégrer ses modifications.
+
+- **Issues et Discussions** : Nous avons utilisé les "issues" pour discuter des problèmes rencontrés et suivre l'avancement des tâches. Cela nous a permis de structurer notre travail et d'assurer une bonne communication tout au long du développement.
+
+- **Documentation** : GitHub nous a également permis de maintenir une documentation claire et accessible, ce qui est essentiel pour comprendre rapidement les fonctionnalités du projet et les instructions d'installation.
+
+---
+
+## Conception et Modélisation du Projet
+
+### 1. Structure du Projet
+
+La structure du projet a été pensée pour être modulaire, claire et maintenable. Voici l'organisation générale du projet :
+
 
