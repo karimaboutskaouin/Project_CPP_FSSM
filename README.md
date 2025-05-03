@@ -223,4 +223,6 @@ Appuie sur Entree  → InitWindow()         → Update()      → Update()
                    → Boucle de jeu        → Draw()        → Draw()
                    → Quit                 → CloseWindow()
 ```
-![Diagramme de Conception et Modélisation](img_4_readme/conception_modelisation.png)
+<p>
+  <img src="img_4_readme/conception_modelisation.png" alt="Diagramme UML" width="900"/>
+</p>
