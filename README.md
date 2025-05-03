@@ -139,7 +139,7 @@ Pour ouvrir un fichier source :
 ```bash
 gedit src/main.cpp &
 ```
-#  Collaboration sur le Projet de Jeu
+# Collaboration sur le Projet de Jeu
 
 Ce document présente le rapport détaillé sur le développement du jeu réalisé en collaboration entre [ItsHaname](https://github.com/ItsHaname) et [karimaboutskaouin](https://github.com/karimaboutskaouin). Le projet est basé sur l'utilisation de **Raylib** et a été développé en **C++**. Ce rapport couvre les outils utilisés pour la gestion de version, ainsi que la conception et la modélisation du projet.
 
@@ -155,7 +155,9 @@ Git est un système de contrôle de version décentralisé qui permet de gérer 
 
 - **Suivi des Modifications** : Chaque modification dans le code est enregistrée par un "commit", ce qui nous permet de suivre l'évolution du projet de manière claire et ordonnée.
   
-- **Branches** : Nous avons utilisé des branches pour travailler sur des fonctionnalités spécifiques sans perturber la branche principale du projet (`main`). Cela nous a permis de développer des fonctionnalités indépendamment et de les tester avant de les intégrer à la version stable.
+- **Branches** : Nous avons utilisé des branches pour travailler sur des fonctionnalités spécifiques sans perturber la branche principale du projet (`main`). Cela nous a permis de développer des fonctionnalités indépendamment et de les tester avant de les intégrer à la version stable. 
+  - **Branche principale (`haname`)** : Cette branche contient les principales mises à jour et fonctionnalités réalisées par [ItsHaname](https://github.com/ItsHaname).
+  - **Branche secondaire (`karimak_G`)** : La branche de mon ami [karimaboutskaouin](https://github.com/karimaboutskaouin) où il a travaillé sur des améliorations spécifiques et des ajouts au projet.
 
 - **Fusion de Code (Merge)** : Après avoir terminé une fonctionnalité sur une branche distincte, nous avons fusionné les changements dans la branche principale en utilisant des "pull requests". Cela nous a permis de discuter et de valider les modifications avant de les intégrer.
 
@@ -176,5 +178,4 @@ GitHub est une plateforme qui nous a permis de centraliser le code source du pro
 ### 1. Structure du Projet
 
 La structure du projet a été pensée pour être modulaire, claire et maintenable. Voici l'organisation générale du projet :
-
 
