@@ -193,6 +193,33 @@ La structure du projet a été pensée pour être modulaire, claire et maintenab
     /Menu.h           # Déclarations des classes et fonctions pour Menu
 /assets
     - Images et autres ressources utilisées (sprites, icônes, etc.)
+````
+Diagramme de Classe
+````
+
++----------------+        +-------------+         +--------------+
+|     Game       |<>------|    Bike     |<>------>|   Person     |
++----------------+        +-------------+         +--------------+
+| - timer         |        | - x, y     |         | - texture    |
+| - gameOver      |        | - speed    |         +--------------+
+| +Update()       |        | +Draw()    |
+| +Draw()         |        +-------------+        +------------------+
++----------------+                               |     Obstacle      |
+                                                 +------------------+
+                                                 | - x, y, speed     |
+                                                 | +Update(), Draw() |
+                                                 +------------------+
+             +--------+
+             | Menu   |
+             +--------+
+             | - bool |
+             | +Draw()|
+             +--------+
+````
+Diagramme de Séquence Simplifié
 ```
-
-
+Utilisateur        → App (main)           → Game          → Bike / Obstacle / Menu
+Appuie sur Entree  → InitWindow()         → Update()      → Update()
+                   → Boucle de jeu        → Draw()        → Draw()
+                   → Quit                 → CloseWindow()
+```
