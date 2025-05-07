@@ -7,6 +7,7 @@ Bike::Bike() {
     x = 100;
     y = 300;
     speed = 5;
+    // initialise les diemnsions e velo et la position initial ainsi que la vitesse
 }
 
 Bike::~Bike() {
@@ -17,16 +18,16 @@ void Bike::Update() {
     if (IsKeyDown(KEY_UP))    y -= speed;
     if (IsKeyDown(KEY_DOWN))  y += speed;
     if (IsKeyDown(KEY_LEFT))  x -= speed;
-    if (IsKeyDown(KEY_RIGHT)) x += speed;
+    if (IsKeyDown(KEY_RIGHT)) x += speed;// controler le joueur avec les toyches clavier de haut et de bas , de droite et de gauche
 
-    if (x < 0) x = 0;
+    if (x < 0) x = 0;//a position horizontale du vélo (x) est inférieure à 0, on la remet à 0.  Cela empêche le vélo de sortir par la gauche de l'écran.
     if (y < 0) y = 0;
     if (x + width > GetScreenWidth())   x = GetScreenWidth() - width;
     if (y + height > GetScreenHeight()) y = GetScreenHeight() - height;
 }
 
 void Bike::Draw() {
-    Color color = DARKGRAY;
+    Color color = DARKGRAY; // Définit la couleur pour dessiner les parties du vélo
 
     Vector2 rearWheel  = { x, y };
     Vector2 frontWheel = { x + width, y };
@@ -36,14 +37,14 @@ void Bike::Draw() {
     DrawCircleLinesV(rearWheel, wheelRadius, color);
     DrawCircleLinesV(frontWheel, wheelRadius, color);
 
-    for (int i = 0; i < 12; i++) {
+    for (int i = 0; i < 12; i++) { // boucle pour dessiner 12 rayons espacés à 30° (360 / 12)
         float angle = (float)i * 360.0f / 12.0f;
         Vector2 spokeEndRear = {
             rearWheel.x + wheelRadius * cosf(angle * DEG2RAD),
             rearWheel.y + wheelRadius * sinf(angle * DEG2RAD)
         };
         Vector2 spokeEndFront = {
-            frontWheel.x + wheelRadius * cosf(angle * DEG2RAD),
+            frontWheel.x + wheelRadius * cosf(angle * DEG2RAD),//DEG2RAD est une constante Raylib 
             frontWheel.y + wheelRadius * sinf(angle * DEG2RAD)
         };
         DrawLineEx(rearWheel, spokeEndRear, 2, color);

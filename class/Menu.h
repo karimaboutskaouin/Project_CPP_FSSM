@@ -6,8 +6,8 @@ public:
     Menu();
     void Update();
     void Draw();
-    bool IsPlaying() const;
-    bool ShouldQuit() const;
+    bool IsPlaying() const;//indique si le jeu doit commencer
+    bool ShouldQuit() const;//Indique si le joueur veut quitter
 
 private:
     bool isPlaying;

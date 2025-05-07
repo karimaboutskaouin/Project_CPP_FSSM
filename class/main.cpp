@@ -3,7 +3,7 @@
 
 int main() {
     const int screenWidth  = 800;
-    const int screenHeight = 450;
+    const int screenHeight = 450;//a largeur et la hauteur de la fenêtre du jeu
 
     InitWindow(screenWidth, screenHeight, "Jeu de course de vélo 🚲 - Raylib C++");
     SetTargetFPS(60);

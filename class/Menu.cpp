@@ -3,7 +3,7 @@
 
 Menu::Menu() {
     isPlaying = false;
-    shouldQuit = false;
+    shouldQuit = false;// le joueur n’a encore rien choisi, donc on initialise les deux variables à false 
 }
 
 void Menu::Update() {
@@ -17,8 +17,8 @@ void Menu::Update() {
 
 void Menu::Draw() {
     // Charger les ressources
-    Texture2D background = LoadTexture("/home/hananeaitbah/Project_CPP_FSSM/class/Capture d’écran du 2025-04-29 19-00-29.png");
-    Font boldFont = LoadFont("Roboto-Bold.ttf");  // Assure-toi que ce fichier existe
+    Texture2D background = LoadTexture("/home/kari/Project_CPP_FSSM/class/Capture d’écran du 2025-04-29 19-00-29.png");
+    Font boldFont = LoadFont("Roboto-Bold.ttf"); //une fonction Raylib qui lit un fichier .ttf (TrueType Font) et crée un objet Font utilisable pour dessiner du texte
 
     BeginDrawing();
 
@@ -36,7 +36,7 @@ void Menu::Draw() {
     pos.y = 100;
     DrawTextEx(boldFont, title, pos, fontSize, 2, textColor);
 
-    // Texte "Jouer"
+    //  "Jouer"
     const char* jouerText = "Jouer";
     const char* jouerHint = "(Appuyez sur ENTREE)";
     pos.y = GetScreenHeight()/2 - 20;
@@ -46,7 +46,7 @@ void Menu::Draw() {
     pos.y += 35;
     DrawTextEx(boldFont, jouerHint, pos, 20, 2, textColor);
 
-    // Texte "Quitter"
+    // "Quitter"
     const char* quitterText = "Quitter";
     const char* quitterHint = "(Appuyez sur ECHAP ou ESPACE)";
     pos.y += 50;
@@ -58,7 +58,7 @@ void Menu::Draw() {
 
     EndDrawing();
 
-    // Décharger les ressources
+   
     UnloadTexture(background);
     UnloadFont(boldFont);
 }
