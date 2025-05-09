@@ -2,6 +2,7 @@
 #include "Bike.h"
 #include "Obstacle.h"
 #include "Menu.h"
+#include "Person.h"
 #include "raylib.h"
 
 class Game {
@@ -9,13 +10,13 @@ private:
     Bike bike;
     Obstacle obstacle;
     Menu menu;
+    Person person; // 👈 Ajouté
 
     bool gameOver;
-    bool win;             // Ajout : le joueur a gagné ?
+    bool win;
     int timer;
     int framesCounter;
 
-    // Photo d'argent
     Vector2 moneyPos;
     int moneyWidth;
     int moneyHeight;

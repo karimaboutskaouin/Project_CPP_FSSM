@@ -1,11 +1,11 @@
-#pragma once // Évite les inclusions multiples de ce fichier (équivalent à #ifndef/#define/#endif)
+#pragma once
 #include "raylib.h"
 #include "Person.h"
 
 class Bike {
 public:
     float x, y; // Position du vélo sur l’écran
-    float width, height; // dimension de velo
+    float width, height;
     float speed;
     Person person;
 
@@ -15,5 +15,6 @@ public:
     void Update();
     void Draw();
     Rectangle GetRect();
+    Vector2 GetSeatPosition(); // 👈 Ajout : pour récupérer la position du siège
 };
 
